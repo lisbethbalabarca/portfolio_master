@@ -1,0 +1,91 @@
+.controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #68b8c4;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+.caja_uno{
+  padding:5% 2% 3%;
+  text-align: justify;
+  font-size: 0.1px;
+  background: #68b8c4;
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.caja_uno:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.caja_uno .mix,
+.caja_uno .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.caja_uno .mix{
+  text-align: left;
+  background: #03899c;
+  margin-bottom: 2%;
+  display: none;
+}
+.caja_uno .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.caja_uno .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 10%;
+}
+
+@media all and (min-width: 420px){
+  .caja_uno .mix,
+  .caja_uno .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .caja_uno .mix,
+  .caja_uno .gap{
+    width: 23.5%;
+  }
+}
