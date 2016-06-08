@@ -55,7 +55,7 @@ jQuery(document).ready(function() {
           $('#changingword').fadeOut(function(){
               $(this).html(words[i=(i+1)%words.length]).fadeIn();
           });
-      }, 1000);
+      }, 4000);
         
   })();
 
@@ -88,3 +88,14 @@ function maquina(contenedor,texto,intervalo){
 var texto = "Lisbeth Balabarca";
 // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
 maquina("maquinas",texto,200);
+
+
+$('.ia-radial').each(function(){
+  var utilslider = parseInt($(this).find("#precent").html()),
+      circle = $(this).find("#pie"),
+      radius = parseInt(circle.attr('r')),
+      circumf= 2 * radius * Math.PI,
+      percentV = (utilslider / 100) * circumf;
+
+  circle.css('strokeDasharray', percentV + " " + circumf);
+});
