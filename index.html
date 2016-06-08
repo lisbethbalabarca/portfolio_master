@@ -7,14 +7,12 @@
     <meta name="author" content="Portfolio -Lisbeth Balabarca">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet prefetch' href='http://weloveiconfonts.com/api/?family=fontawesome'>
     <link rel="stylesheet prefetch" href='http://weloveiconfonts.com/api/?family=entypo'>
-    <link rel="stylesheet" href="assets/css/magic.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
   </head>
@@ -59,56 +57,60 @@
                             </div>
                             <div class="col-md-6 text-center">
                               <h2 class="sub_title shadow">Skill's me!</h1>
-                              <div class="col-md-4">
-                                <p class="skill_title">HTML</p>
-                                <div class="ia-radial red">
-                                  <svg viewBox="0 0 100 100">
-                                    <circle r="25" cx="50" cy="50" id="pie" />
-                                  </svg>
-                                  <div id="precent">80</div>
+                              <div class="card">
+                                <div class="products">
+                                  <div product-id="1" product-color="#D18B49" class="product active">
+                                    <div class="thumbnail"><img src="assets/image/html5.png"/></div>
+                                    <h1 class="title">HTML 5</h1>
+                                    <p class="description">Este lenguaje permite que podamos crear el esqueleto de nuestra página web.</p>
+                                    <div class="progress">
+                                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+                                    </div>
+                                  </div>
+                                  <div product-id="2" product-color="#542F13" class="product">
+                                    <div class="thumbnail"><img src="assets/image/css3.png"/></div>
+                                    <h1 class="title"> CSS3</h1>
+                                    <p class="description">Lenguaje de estilización que permite darle vida a nuestro html.</p>
+                                    <div class="progress">
+                                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+                                    </div>
+                                  </div>
+                                  <div product-id="3" product-color="#A5AAAE" class="product">
+                                    <div class="thumbnail"><img src="assets/image/js.png"/></div>
+                                    <h1 class="title">JavaScript</h1>
+                                    <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                    <div class="progress">
+                                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:40%"></div>
+                                    </div>
+                                  </div>
+                                  <div product-id="4" product-color="#ED8D1F" class="product">
+                                    <div class="thumbnail"><img src="assets/image/sass.png"/></div>
+                                    <h1 class="title">SASS</h1>
+                                    <p class="description">Es un pre-procesador de CSS, nos permite reutilizar código, y hacer nuestro proyecto más fluido.</p>
+                                    <div class="progress">
+                                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+                                    </div>
+                                  </div>
+                                  <div product-id="5" product-color="#C4C8CB" class="product">
+                                    <div class="thumbnail"><img src="assets/image/jade.png"/></div>
+                                    <h1 class="title">Jade</h1>
+                                    <p class="description">Es otro pre-procesador, pero de HTML. Nos permite generar un HTML más agil, de igual manera, el código puede reutilizarse.</p>
+                                    <div class="progress">
+                                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+                                    </div>
+                                  </div>
+                                  <div product-id="6" product-color="#C4C8CB" class="product">
+                                    <div class="thumbnail"><img src="assets/image/boot.png"/></div>
+                                    <h1 class="title">Bootstrap</h1>
+                                    <p class="description">Aunque la discusión si es un Framework o una libreria aún esta latente, es un documento que ayuda a que tu web sea responsive... :)</p>
+                                    <div class="progress">
+                                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+                                    </div>
+                                  </div>
                                 </div>
-                                <p class="skill_title">CSS3</p>  
-                                <div class="ia-radial green">
-                                  <svg viewBox="0 0 100 100">
-                                    <circle r="25" cx="50" cy="50" id="pie" />
-                                  </svg>
-                                  <div id="precent">80</div>
-                                </div>
-                              </div>
-                              <div class="col-md-4">
-                              <p class="skill_title">JavaScript</p>
-                                <div class="ia-radial green">
-                                  <svg viewBox="0 0 100 100">
-                                    <circle r="25" cx="50" cy="50" id="pie" />
-                                  </svg>
-                                  <div id="precent">40</div>
-                                </div>
-                                <p class="skill_title">Jquery</p>  
-                                <div class="ia-radial red">
-                                  <svg viewBox="0 0 100 100">
-                                    <circle r="25" cx="50" cy="50" id="pie" />
-                                  </svg>
-                                  <div id="precent">45</div>
-                                </div>
-                              </div>
-                              <p class="skill_title">Sass and Less</p>
-                              <div class="col-md-4">
-                                <div class="ia-radial red">
-                                  <svg viewBox="0 0 100 100">
-                                    <circle r="25" cx="50" cy="50" id="pie" />
-                                  </svg>
-                                  <div id="precent">80</div>
-                                </div>
-                                <p class="skill_title">Jade</p>  
-                                <div class="ia-radial green">
-                                  <svg viewBox="0 0 100 100">
-                                    <circle r="25" cx="50" cy="50" id="pie" />
-                                  </svg>
-                                  <div id="precent">80</div>
-                                </div>
+                                <div class="footer"><a id="prev" href="#" class="btn">Prev</a><a id="next" href="#" class="btn">Next</a></div>
                               </div>
                             </div>
-                            <h3 class="sub_title">Te invito a conocer más de mi trabajo... --></h3>
                           </div>
                         </div> 
                     </div>   
@@ -145,12 +147,7 @@
               <div class="diapo">
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-3 animated rotateIn infinite">
-                        <img src="assets/image/mundo.png" alt="">
-                      </div>
-                      <div class="col-md-9">
-                              
-                      </div>
+                      <h3 class="sub-title"> Lo que más me gusta hacer es:</h3>
                     </div>
                   </div>
               </div>
@@ -159,7 +156,7 @@
                 <div class="diapo">
                   <div class="container">
                     <div class="row">
-                    <h3 class="sub_title pt5">Si tienes una gran idea...Ponte en contacto conmigo</h3>
+                    <h3 class="sub_title pt5 animated bounce">Si tienes una gran idea...Ponte en contacto conmigo</h3>
                       <div class="col-md-2 social">
                         <ul id="social">
                           <li>

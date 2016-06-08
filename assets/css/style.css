@@ -40,13 +40,6 @@ button + label{
   font-size: 0.1px;
   -webkit-backface-visibility: hidden;
 }
-
-.caja_uno:after{
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
 .caja_uno .mix,
 .caja_uno .gap{
   display: inline-block;
@@ -55,12 +48,10 @@ button + label{
 
 .caja_uno .mix{
   text-align: left;
-  background: #03899c;
   margin-bottom: 2%;
   display: none;
 }
 .caja_uno .mix:after{
-  content: attr(data-myorder);
   color: white;
   font-size: 16px;
   display: inline-block;
