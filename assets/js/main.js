@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
     jQuery.fn.fullpage({
         verticalCentered: true,
         resize : true,
-        anchors: ['Home', 'about me', 'skill', 'contacta', 'contact'],
+        anchors: ['Home', 'about me', 'skill','contact'],
         scrollingSpeed: 700,
         easing: 'easeInQuart',
         menu: false,
@@ -22,15 +22,10 @@ jQuery(document).ready(function() {
             if(anchorLink=='about me'){
                 jQuery('#section1').find('.diapo').delay(200).animate({
                     left:'0%'
-                },1000,'easeOutExpo');
-               
-            }
-            if(anchorLink=='contacta'){
-                jQuery('#section3 ').find('.diapo').delay(200).slideDown(1000,'easeOutCubic');
-
+                },1000,'easeOutExpo');  
             }
             if(anchorLink=='contact'){
-                jQuery('#section4 h2').delay(500).animate({
+                jQuery('#section3 h2').delay(500).animate({
                     left:'0%'
                 },1500,'easeOutExpo',function(){
                      jQuery('#section4 img').fadeTo(4000,1);
